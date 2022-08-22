@@ -1,0 +1,454 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Text scrolling section */
+
+/* Start Services section */
+
+/* Title */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300");
+
+.title {
+  text-align: center;
+  color: #0c0410;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 80px;
+  padding-top: 40px;
+  height: auto;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 45px;
+  }
+}
+
+.title div {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.title div:first-of-type {
+  animation: showup 7s infinite;
+}
+
+.title div:last-of-type {
+  width: 0px;
+  animation: reveal 7s infinite;
+}
+
+.title div:last-of-type span {
+  margin-left: -255px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -255px;
+  }
+
+  20% {
+    margin-left: -255px;
+  }
+
+  35% {
+    margin-left: 0px;
+  }
+
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+
+  30% {
+    width: 300px;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    width: 300px;
+  }
+}
+
+/* Service */
+
+.acc_ctrl h2 {
+  color: #282f35;
+  font-family: "Montserrat";
+  font-size: 80px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  margin: 0;
+}
+.acc_panel p {
+  color: #55286f;
+  font-size: 17px;
+  line-height: 2;
+  margin: 20px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px auto;
+}
+
+.acc {
+  margin: 50px 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.acc li {
+  list-style-type: none;
+  padding: 0;
+}
+
+.acc_ctrl {
+  background: #ffffff;
+  border-bottom: solid 1px #f2f2f2;
+  cursor: pointer;
+  display: block;
+  /* outline: none; */
+  text-align: left;
+  padding: 2em;
+  position: relative;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.acc_ctrl:before {
+  background: #e6b051;
+  content: "";
+  height: 2px;
+  margin-right: 37px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 20px;
+}
+
+.acc_ctrl:after {
+  background: #e6b051;
+  content: "";
+  height: 2px;
+  margin-right: 37px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 20px;
+}
+
+.acc_ctrl.active:before {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.acc_ctrl.active h2,
+.acc_ctrl:focus h2 {
+  position: relative;
+}
+
+.acc_panel {
+  background: #ededed;
+  display: none;
+  overflow: hidden;
+  width: 60%;
+}
+
+@media only screen and (max-width: 600px) {
+  .acc_ctrl h2 {
+    font-size: 40px;
+  }
+
+  .acc_panel p {
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .acc_panel {
+    width: 90%;
+  }
+}
+
+/* Scroll text */
+
+body.animacion-linea-temporal .seccion-linea-temporal {
+  pointer-events: unset;
+  z-index: 1;
+}
+
+.seccion-linea-temporal {
+  pointer-events: none;
+  color: #fff;
+  margin: 0;
+  position: relative;
+  z-index: -1;
+  background-color: #000;
+}
+@media only screen and (max-width: 570px) {
+  .seccion {
+    margin: 85px 0;
+  }
+}
+@media only screen and (max-width: 1070px) {
+  .seccion {
+    margin: 105px 0;
+  }
+}
+@media only screen and (max-width: 1320px) {
+  .seccion {
+    margin: 120px 0;
+  }
+}
+.seccion {
+  margin: 150px 0;
+}
+
+@media only screen and (max-width: 570px) {
+  .seccion-linea-temporal .diapositivas .diapositiva .texto-superior {
+    top: calc(50% - 75px);
+  }
+}
+@media only screen and (max-width: 860px) {
+  .seccion-linea-temporal .diapositivas .diapositiva .texto-superior {
+    top: calc(50% - 85px);
+  }
+}
+@media only screen and (max-width: 1070px) {
+  .seccion-linea-temporal .diapositivas .diapositiva .texto-superior {
+    top: calc(50% - 105px);
+  }
+}
+@media only screen and (max-width: 1320px) {
+  .seccion-linea-temporal .diapositivas .diapositiva .texto-superior {
+    top: calc(50% - 135px);
+  }
+}
+@media only screen and (max-width: 1680px) {
+  .seccion-linea-temporal .diapositivas .diapositiva .texto-superior {
+    top: calc(50% - 175px);
+  }
+}
+.seccion-linea-temporal .diapositivas .diapositiva .texto-superior {
+  position: fixed;
+  top: calc(50% - 235px);
+  left: 3vw;
+  transform: translateY(-50%);
+  font-size: 12vw;
+  min-width: 100vw;
+  z-index: 1;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  overflow-wrap: break-word;
+}
+
+.seccion-linea-temporal .diapositivas .diapositiva .texto-superior span {
+  white-space: nowrap;
+  padding: 0 15vw;
+}
+
+@media only screen and (max-width: 860px) {
+  .seccion-linea-temporal .diapositivas .diapositiva .texto-inferior {
+    top: 50%;
+  }
+}
+@media only screen and (max-width: 1070px) {
+  .seccion-linea-temporal .diapositivas .diapositiva .texto-inferior {
+    top: calc(50% + 20px);
+  }
+}
+@media only screen and (max-width: 1320px) {
+  .seccion-linea-temporal .diapositivas .diapositiva .texto-inferior {
+    top: calc(50% + 40px);
+  }
+}
+@media only screen and (max-width: 1680px) {
+  .seccion-linea-temporal .diapositivas .diapositiva .texto-inferior {
+    top: calc(50% + 50px);
+  }
+}
+.seccion-linea-temporal .diapositivas .diapositiva .texto-inferior {
+  position: fixed;
+  top: calc(50% + 60px);
+  left: 80px;
+  transform: translateY(-50%);
+  color: #000;
+  text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white,
+    1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 #fff;
+  font-size: 22vw;
+  opacity: 0.5;
+  line-height: 80%;
+  pointer-events: none;
+  text-transform: uppercase;
+  min-width: 100vw;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 570px) {
+  .seccion-linea-temporal .diapositivas .diapositiva .contenido {
+    width: 330px;
+    margin-left: 7vw;
+    font-size: 16px;
+  }
+}
+.seccion-linea-temporal .diapositivas .diapositiva .contenido {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 500px;
+  margin-left: 12vw;
+  z-index: -1;
+}
+
+.seccion-linea-temporal .diapositivas .diapositiva .fondo {
+  display: block;
+  height: 100%;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.seccion-linea-temporal .diapositivas .diapositiva .imagen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.seccion-linea-temporal.negra .navegacion {
+  color: #000;
+}
+.seccion-linea-temporal .navegacion {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 14px;
+  transition: 1s;
+  opacity: 0;
+  pointer-events: none;
+}
+ol,
+ul {
+  overflow-wrap: break-word;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.seccion-linea-temporal.negra .saltar {
+  border: 1px solid #000;
+}
+@media only screen and (max-width: 570px) {
+  .seccion-linea-temporal .saltar {
+    width: 40px;
+    height: 40px;
+    top: 80px;
+    right: 8px;
+  }
+}
+@media only screen and (max-width: 1070px) {
+  .seccion-linea-temporal .saltar {
+    width: 45px;
+    height: 45px;
+    top: 90px;
+    right: 10px;
+  }
+}
+.seccion-linea-temporal .saltar {
+  position: fixed;
+  top: 140px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 1000px;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: 0.8s;
+}

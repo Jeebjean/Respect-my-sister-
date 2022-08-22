@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="340" viewBox="0 0 340 340">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #dbf1ff;
+        stroke-width: 10px;
+      }
+    </style>
+  </defs>
+  <circle id="big" class="cls-1" cx="170" cy="170" r="165"/>
+</svg>
