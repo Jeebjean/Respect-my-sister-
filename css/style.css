@@ -11010,3 +11010,34 @@ button:focus {
     width: 100%;
   }
 }
+
+.faq_question {
+  background-color: #bc96e6;
+  color: #55286f;
+  cursor: pointer;
+  padding: 25px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 35px;
+  transition: 0.4s;
+}
+
+.active,
+.faq_question:hover {
+  background-color: #55286f;
+  color: #bc96e6;
+  border-top: 6px solid #e6b051;
+}
+
+.faq_answer {
+  padding: 40px 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.faq_answer p {
+  color: #55286f;
+}
