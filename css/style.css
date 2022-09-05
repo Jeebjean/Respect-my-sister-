@@ -3293,6 +3293,9 @@ button:focus {
   .header_part .main_nav {
     padding: 0 10px;
   }
+  .header_part .header_right_btn .header_btn {
+    margin-right: 30px;
+  }
 }
 .header_part.menu_fixed {
   background-color: #fff;
@@ -4001,8 +4004,8 @@ button:focus {
 
 .pu_banner_part .pu_banner_slider .pu_banner_bg img {
   position: absolute;
-  right: 50px;
-  top: 50%;
+  right: -100px;
+  top: 60%;
   transform: translateY(-50%);
 }
 .pu_banner_part .pu_banner_slider .swiper-slide-active .pu_banner_bg {
@@ -7092,6 +7095,10 @@ button:focus {
 .pu_beadcrumb_part {
   position: relative;
   z-index: 1;
+  /* background-image: url(../img/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom; */
 }
 .pu_beadcrumb_part:after {
   position: absolute;
