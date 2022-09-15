@@ -3941,7 +3941,7 @@ button:focus {
 
 .pu_banner_part .pu_banner_slider .pu_banner_bg img {
   position: absolute;
-  right: -100px;
+  right: 80px;
   top: 60%;
   transform: translateY(-50%);
 }
@@ -10864,7 +10864,7 @@ button:focus {
 }
 
 .acc {
-  margin: 50px 0;
+  margin: 0;
   overflow: hidden;
   padding: 0;
 }
