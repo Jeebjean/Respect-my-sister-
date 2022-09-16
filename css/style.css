@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@200&family=Beau+Rivage&family=Big+Shoulders+Display:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Big+Shoulders+Display:wght@700&family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap&family=Beau+Rivage&family=Roboto&display=swap");
 @-webkit-keyframes bounce {
   0%,
   20%,
@@ -155,7 +154,7 @@
 }
 /**************** common css start ****************/
 body {
-  font-family: "Anek Telugu", sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 18px;
@@ -3214,7 +3213,7 @@ button:focus {
   }
 }
 .header_part .header_right_btn .header_btn {
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   font-weight: 700;
   text-transform: uppercase;
@@ -3231,7 +3230,7 @@ button:focus {
     padding: 0 10px;
   }
   .header_part .header_right_btn .header_btn {
-    margin-right: 30px;
+    margin-right: 50px;
   }
 }
 .header_part.menu_fixed {

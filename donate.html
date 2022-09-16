@@ -86,9 +86,9 @@
                                             Get Help
                                         </a>
                                         <ul class="dropdown-menu blue_border_bottom">
-                                            <li><a class="dropdown-item" href="find_a_local_chapter.html">Find A Local
+                                            <li><a class="dropdown-item" href="error.html">Find A Local
                                                     Chapter</a></li>
-                                            <li><a class="dropdown-item" href="legal_assitance.html">Legal Assitance</a>
+                                            <li><a class="dropdown-item" href="error.html">Legal Assitance</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -137,11 +137,12 @@
                                             </li>
                                             <li>
                                                 <a href="#" data-toggle="modal"
-                                                    class="header_meta_btn modal_btn dropdown-item" id="Register_btn"
-                                                    data-target="#Register_modal">
+                                                    class="header_meta_btn modal_btn dropdown-item" id="profil_btn"
+                                                    data-target="#my_profil">
                                                     My Profil
                                                 </a>
                                             </li>
+                                        </ul>
                                     </li>
                                 </ul>
                                 </li>
@@ -1047,7 +1048,7 @@
                     <i class="fas fa-times"></i>
                 </button>
                 <div class="modal-body">
-                    <h2 class="title">Create Your Free Account<span>All fields are required!</span> </h2>
+                    <h2 class="title">Create Your Free Account</h2>
                     <form action="#" class="popup_form">
                         <div class="row">
                             <div class="col-lg-6">
@@ -1059,7 +1060,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label for="first_name">Your last Name</label>
+                                    <label for="first_name">Your Last Name</label>
                                     <input type="text" id="last_name" name="last_name" class="form-control cu_input"
                                         placeholder="last name">
                                 </div>
@@ -1073,16 +1074,81 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="text" id="phone" name="phone" class="form-control cu_input"
+                                        placeholder="555 505 5050">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
                                     <label for="Password">Password</label>
                                     <input type="text" id="Password" name="Password" class="form-control cu_input"
                                         placeholder="........">
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-12">
-                                <div class="form-group mb-0 d-flex align-items-center">
-                                    <button type="submit" class="cu_btn btn_3">Login</button>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="Password">Confirm Password</label>
+                                    <input type="text" id="Password" name="Password" class="form-control cu_input"
+                                        placeholder="........">
                                 </div>
                             </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <input type="text" id="address" name="address" class="form-control cu_input"
+                                        placeholder="23 Johnson Street">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="apartment">Apartment, Suite, etc</label>
+                                    <input type="text" id="apartment" name="apartment" class="form-control cu_input"
+                                        placeholder="308">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" name="city" class="form-control cu_input"
+                                        placeholder="Madison">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" class="form-control cu_input"
+                                        placeholder="New York">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <input type="text" id="country" name="country" class="form-control cu_input"
+                                        placeholder="United States">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="zip_code">Zip Code</label>
+                                    <input type="text" id="zip_code" name="zip_code" class="form-control cu_input"
+                                        placeholder="55555">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="notifications"> <input type="checkbox" id="notifications"
+                                            name="notifications" style="margin-right: 15px;"> Wants to receive email
+                                        notifications</label>
+                                </div>
+                                <div class="col-lg-3 col-md-12">
+                                    <div class="form-group mb-0 d-flex align-items-center">
+                                        <button type="submit" class="cu_btn btn_3">Login</button>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </form>
                 </div>
@@ -1090,6 +1156,32 @@
         </div>
     </div>
     <!--singup modal Modal end -->
+
+    <!-- My profil start -->
+
+    <div class="modal fade pu_custom_modal_content client_profil" id="my_profil" tabindex="-1" role="dialog"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close modal_style_close_btn" data-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <h2 class="title">My Profil</h2>
+                    </div>
+                    <form action="#" class="popup_form">
+                        <div class="form-group mb-0 d-md-flex align-items-center justify-content-between">
+                            <button type="submit" class="cu_btn btn_3">View Profil</button>
+                            <button type="submit" class="cu_btn btn_3">Edit Profil</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- My profil end -->
 
     <!-- popup search part -->
     <div id="popup-search" class="page-popup page-search-popup">
@@ -1173,9 +1265,9 @@
                                 Get Help
                             </a>
                             <ul class="dropdown-menu blue_border_bottom">
-                                <li><a class="dropdown-item" href="find_a_local_chapter.html">Find A Local
+                                <li><a class="dropdown-item" href="error.html">Find A Local
                                         Chapter</a></li>
-                                <li><a class="dropdown-item" href="legal_assitance.html">Legal Assitance</a>
+                                <li><a class="dropdown-item" href="error.html">Legal Assitance</a>
                                 </li>
                             </ul>
                         </li>
@@ -1222,7 +1314,7 @@
                                 </li>
                                 <li>
                                     <a href="#" data-toggle="modal" class="header_meta_btn modal_btn dropdown-item"
-                                        id="Register_btn" data-target="#Register_modal">
+                                        id="profil_btn" data-target="#my_profil">
                                         My Profil
                                     </a>
                                 </li>
