@@ -3941,7 +3941,7 @@ button:focus {
 .pu_banner_part .pu_banner_slider .pu_banner_bg img {
   position: absolute;
   right: 80px;
-  top: 60%;
+  top: 50%;
   transform: translateY(-50%);
 }
 .pu_banner_part .pu_banner_slider .swiper-slide-active .pu_banner_bg {
@@ -5051,14 +5051,14 @@ button:focus {
   border: 2px solid #6c6c7a;
   font-size: 14px;
   font-weight: 700;
-  color: #fff;
+  color: #e6b051;
   padding: 6px 18px;
   min-width: auto;
   letter-spacing: auto;
 }
 .popular_causes_style_03 .cu_btn:hover {
   border-color: #e6b051;
-  background-color: #e6b051;
+  background-color: #e6af51b2;
 }
 
 .popular_cases_title,
@@ -7497,7 +7497,7 @@ button:focus {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: #c24033;
+  background-color: #e6b051;
 }
 .pu_event_details_thumb .pu_countdown_content {
   position: absolute;
