@@ -3959,6 +3959,16 @@ button:focus {
     min-height: 600px;
     max-height: 100vh;
   }
+
+  .pu_banner_part .pu_banner_slider .pu_banner_bg img {
+    width: 50%;
+  }
+
+  .pu_banner_part .pu_banner_slider .pu_banner_bg .heroimg {
+    width: 100%;
+    right: 0px;
+    top: 60%;
+  }
 }
 .pu_banner_part .pu_banner_content {
   position: relative;
@@ -7100,8 +7110,16 @@ button:focus {
   font-weight: bold;
   text-transform: uppercase;
 }
+.pu_breadcrumb_inner_content .titles {
+  font-size: 50px;
+  text-align: left;
+  color: #bc96e6;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 @media (max-width: 991px) {
-  .pu_breadcrumb_inner_content .title {
+  .pu_breadcrumb_inner_content .title,
+  .pu_breadcrumb_inner_content .titles {
     font-size: 40px;
   }
 }
@@ -10974,6 +10992,29 @@ button:focus {
   border-top: 6px solid #e6b051;
 }
 
+.profil_but {
+  /* background-color: #bc96e6; */
+  color: #55286f;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 25px;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.active,
+.profil_but:hover {
+  background-color: #55286f;
+  color: #e6b051;
+}
+
+.pro_elmt {
+  margin-bottom: 90px;
+}
 .faq_answer {
   padding: 40px 18px;
   display: none;
